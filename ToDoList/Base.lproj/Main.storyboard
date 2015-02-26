@@ -21,9 +21,13 @@
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mow the lawn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qWx-9b-M52">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <gestureRecognizers/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="Hy1-Pv-3Ur" appends="YES" id="N7T-b0-1hN"/>
+                                            </connections>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -44,6 +48,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MS-Rp-Bby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Hy1-Pv-3Ur"/>
             </objects>
             <point key="canvasLocation" x="309" y="136"/>
         </scene>
